@@ -14,8 +14,8 @@ sed -i 's/^ENV SCREEPS_VERSION.*$/ENV SCREEPS_VERSION '$version'/i' Dockerfile
 date > timestamp
 git add timestamp
 git add currentversion
-git config user.email i@kagurazakanyaa.com
-git config user.name KagurazakaNyaa
+git config --global user.email i@kagurazakanyaa.com
+git config --global user.name KagurazakaNyaa
 git commit --no-gpg-sign -a -m "Auto Update to screeps "$version
 git tag -f $version
 if [[ "$version" != "ptr" ]]; then
