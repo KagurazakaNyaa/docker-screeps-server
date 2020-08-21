@@ -18,4 +18,4 @@ git tag -f $version
 if [[ "$version" != "ptr" ]]; then
 	git tag -f latest
 fi
-git push
+git push origin --tags
