@@ -8,7 +8,7 @@ There are two different type how to start a screeps server.
 If you do not have an existing server directory, just start the Docker container with the command line argument `init`, and everything gets done for you.
 
 ```bash
-docker run -it --rm -v $PWD:kagurazakanyaa/screeps-server init
+docker run -it --rm -v $PWD:/screeps kagurazakanyaa/screeps-server init
 ```
 Now it's all set to run the Screeps server.
 
